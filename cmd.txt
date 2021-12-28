@@ -1,0 +1,10 @@
+
+react app 
+docker build . -t cgi/workshop-donation-react-app
+docker run -d -p 3333:80 -e API_URL=http://localhost:8000/api/ -e PORT=3333 -t cgi/workshop-donation-react-app
+.net api 
+docker build . -t cgi/workshop-donation-webapi
+docker run -d  -p 8000:80 -t cgi/workshop-donation-webapi
+
+
+
